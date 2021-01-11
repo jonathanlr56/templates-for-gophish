@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="100%">
+	<tbody>
+		<tr>
+			<td height="15" style="line-height:15px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="left" style="height:32px;line-height:0px" valign="middle" width="32"><img alt="Facebook" class="CToWUd" height="24" src="https://ci5.googleusercontent.com/proxy/8JL2ule9KrMjX9BHPfLqB144hhEQJl3Rvv_azXGi9foEKkmnur2qeVLoL1IUhEm01tewd5Zx-FTm7JcJmb6ypFQYd_CtGN200i-qpKpuzw=s0-d-e1-ft#https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/7s5lklTGUda.png" style="border:0;font-size:19px;font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;color:#1877f2" width="118" /></td>
+		</tr>
+		<tr style="border-bottom:solid 1px #e5e5e5">
+			<td height="15" style="line-height:15px">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="100%">
+	<tbody>
+		<tr>
+			<td height="4" style="line-height:4px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">Bonjour </span></span> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d35d37f967445b89bf1edb5b41e8c47"><span data-offset-key="9d35d37f967445b89bf1edb5b41e8c47:0">{{.FirstName}}</span></span></span> <span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">,</span></span></p>
+
+			<div><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">Nous avons re&ccedil;u une demande de r&eacute;initialisation de votre mot de passe Facebook.</span></span></div>
+			<span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">Entrez le code de r&eacute;initialisation du mot de passe suivant&nbsp;:</span></span>
+
+			<p>&nbsp;</p>
+
+			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:max-content;margin-top:20px;margin-bottom:20px">
+				<tbody>
+					<tr>
+						<td style="font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans-serif;padding:14px 32px 14px 32px;background-color:#f2f2f2;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px solid #ccc;text-align:center;border-radius:7px;display:block;border:1px solid #1877f2;background:#e7f3ff"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:17px;font-family:Roboto;font-weight:700;margin-left:0px;margin-right:0px">719561</span></span></span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">Vous pouvez aussi changer directement votre mot de passe.</span></span>
+
+			<table border="0" cellpadding="0" cellspacing="0" height="103" style="border-collapse: collapse;" width="333">
+				<tbody>
+					<tr>
+						<td height="20" style="line-height:20px"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">&nbsp;</span></span></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<table border="0" cellpadding="0" cellspacing="0" height="38" style="border-collapse: collapse;" width="304">
+							<tbody>
+								<tr>
+									<td style="border-collapse:collapse;border-radius:6px;text-align:center;display:block;border:none;background:#1877f2;padding:6px 20px 10px 20px">
+									<center><a href="{{.URL}}"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px"><font size="3"><span style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold;vertical-align:middle;color:#ffffff;font-weight:500;font-family:Roboto-Medium,Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:17px">Changer&nbsp;de&nbsp;mot&nbsp;de&nbsp;passe</span></font></span></span></a></center>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="8" style="line-height:8px"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">&nbsp;</span></span></td>
+					</tr>
+					<tr>
+						<td height="20" style="line-height:20px"><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">&nbsp;</span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<div><span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px"><span style="color:#333333;font-weight:bold">Vous n&rsquo;avez pas demand&eacute; ce changement&nbsp;?</span></span></span></div>
+			<span class="m_-6006150843358536881mb_text" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;color:#141823"><span style="font-size:15px">Si vous n&rsquo;avez pas demand&eacute; de nouveau mot de passe, dites-le nous.</span></span></td>
+		</tr>
+		<tr>
+			<td height="50" style="line-height:50px">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="100%">
+	<tbody>
+		<tr style="border-top:solid 1px #e5e5e5">
+			<td height="19" style="line-height:19px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="font-family:Roboto-Regular,Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:12px;color:#8a8d91;line-height:16px;font-weight:400">Ce message a &eacute;t&eacute; envoy&eacute; &agrave; <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="568811161597481ebf8f9e73675cab18"><span data-offset-key="568811161597481ebf8f9e73675cab18:0">{{.Email}}</span></span></span> sur votre demande.<br />
+			Facebook Ireland Ltd., Attention: Community Operations, 4 Grand Canal Square, Dublin 2, Ireland</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>{{.Tracker}}</p>
+</body>
+</html>
