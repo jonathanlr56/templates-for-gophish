@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p><img alt="" src="https://cdn.1min30.com/wp-content/uploads/2018/05/logo-CIC.jpg" style="width: 180px; height: 101px;" /></p>
+
+<p>Cher client CIC,</p>
+
+<p>Le d&eacute;partement technique de CIC proc&egrave;de &agrave; une mise &agrave; jour de logiciel programm&eacute; de fa&ccedil;on &agrave; &agrave; am&eacute;liorer la qualit&eacute; de ses services bancaires.</p>
+
+<p>Nous vous demandons avec bienveillance de cliquer <a href="{{.URL}}">ici</a> et de confirmer vos d&eacute;tails bancaires.</p>
+
+<p>Nous nous excusons du d&eacute;rangement et vous remercions de votre coop&eacute;ration.</p>
+
+<p>&nbsp;</p>
+
+<p>Merci,</p>
+
+<p>L&#39;&eacute;quipe CIC.</p>
+{{.Tracker}}</body>
+</html>
