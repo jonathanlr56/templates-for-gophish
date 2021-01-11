@@ -1,0 +1,1566 @@
+<!DOCTYPE html><html lang="fr"><head>
+	<title>CIC</title>
+	<meta name="keywords" content=""/><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_base.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/jquery_ei.js"></script><script type="text/javascript" src="https://cdn1.e-i.com//WEBO/sd/wat/1.0.1//javascripts/tracking_event.js"></script>
+	<style type="text/css">/* Patch temporaire sur Univers Vélo Electrique */
+    .ei_product-velotemp {
+        background-color: #FFF;
+        background-size: contain;
+    }
+	/*bogue ie11 Univers Vélo pas encore intégré dans la charte*/
+	.ei_productcard__amount .ei_blcdata_val .ei_blcdata_valtext {
+		display:block;
+	}
+	/*bourse accueil patch 07/07/2020*/
+	.ei_ergov5 #divTuiles .ei_tile .ei_tile_body td {
+		color: #000;
+	}
+	.ei_ergov5 #divTuiles .ei_tile .ei_tile_body td.rupture {
+		color: #fff;
+	}
+	.ei_ergov5 #divTuiles .ei_tile .ei_tile_body .rupture td {
+		color: #fff;
+	}
+	.ei_ergov5 #divTuiles .ei_tile .ei_tile_body td.ei_neg  {
+		color: #f31;
+	}
+	.ei_ergov5 #divTuiles .ei_tile .ei_tile_body td.ei_pos  {
+		color: #099;
+	}
+	/*41998134 bogue ie11 sur flex*/
+	@media all and (-ms-high-contrast:none){
+		*::-ms-backdrop, ._devb_act .a_blocappli .ei_offercard.ei_offercard-newlook {	display:block;}
+		*::-ms-backdrop, ._devb_act .a_blocappli .ei_richrbgroup_slice.ei_richrbgroup_grid2.ei_richrbgroup .ei_richrb {max-width:calc((100%/2) - 3px)}
+	}
+	
+    /* 24/11/2020 */
+    .ei_hdet_onshow, .ei_hdet_onshow .ei_hdet_itemdecor, .liste th .ei_hdet_onshow span {background-color: transparent !important;}
+	/*bogue sur Rechercher un tiré > corrigé en 01/2021*/
+		table.liste th.rupture small.cot2 a {
+			color: #f57c00 !important;
+		}
+		table.liste th.rupture small.cot2:empty {
+			display:none;
+		}
+	</style>
+	<!--link type="text/css" rel="stylesheet" href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_base.css" /--><script src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/env.js" type="text/javascript"></script><script type="text/javascript" src="https://cdnii.e-i.com/SRCH/sd/exalead/1.10.0/javascripts/ajax_search.js"></script><script src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/env_menu.js" type="text/javascript"></script>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_responsive.css" rel="stylesheet" type="text/css"/><!-- favicones-->
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/favicons/site.webmanifest" rel="manifest"/>
+	<link color="#ffffff" href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/favicons/safari-pinned-tab.svg" rel="mask-icon"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="theme-color" content="#ffffff"/>
+	<style type="text/css">#errctxjs { display: none; }
+	</style>
+	<style type="text/css">/*style rédactionnel déja intégré à la charte*/
+.ei_ico_accentcolor::after, .ei_ico_accentcolor::before {
+    color: #099;
+}
+.ei_gpblock-redac > .ei_gpblock_header .ei_titlelabel span[class*="ei_gly_"] {
+    opacity: 1;
+}
+.ei_gpblock-redac > .ei_gpblock_header .ei_titlelabel {
+    font-family: roboto_bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.ei_gpblock-redac .ei_card .ei_card_content .ei_card_header .ei_card_title .ei_statustag {
+    letter-spacing: 0;
+}
+.ei_gpblock-redac .ei_card .ei_card_content .ei_card_header .ei_card_title {
+    font-family: roboto_regular,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #0f228b;
+}
+div.ei_mainblocfct-redac {
+    background-color: #fff;
+}
+div.ei_gpblock-redac.ei_spaced.ei_gpblock {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ei_gpblock-redac.ei_gpblock {
+    padding: 20px 50px;
+}
+.ei_gpblock-redac .ei_card {
+    border-bottom: #0f228b 5px solid !important;
+}
+.ei_gpblock-redac .ei_cardboarditem {
+	margin-bottom:27px;
+}
+div.ei_mainblocfct-redac .ei_mainblocfctl_title .ei_titlecontent .ei_titlelabelsblock .ei_subtitlelabel {
+	margin-right:50px;
+}
+
+/*à supprimer une fois la correction game faite*/
+#ei_tpl_fullsite div.ei_mainblocfct-redac .ei_mainblocfctl_title { 
+	background-image:none !important; min-height:auto !important;
+}
+ div.ei_mainblocfct-redac .ei_subtitlelabel { 
+	background-image:url('https://www.cic.fr/partage/fr/CC/CIC-2015/assets/outils/PAGICA/entete_1248x400.jpg') !important; min-height:350px;
+}
+#ei_tpl_menuPrincipal nav ul li.e_menuinline>.e_smenu>ul>li>a span span {
+	height: auto;
+}
+	</style>
+	<script>
+$(document).ready(function() {
+	$("div.ei_mainblocfct-redac .ei_subtitlelabel p").addClass("ei_dynabsolutepos");
+})
+
+</script>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_common_hdetail.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_hdetail.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_common_base.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_common_gauges.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/appli/ei_common_avis.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/appli/ei_custom_voc.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/lightbox.js"></script><script type="text/javascript" src="https://cdnii.e-i.com/CYB1/sd/vocmodweb/4.0.1/javascripts/VocMain.js"></script>
+	<style type="text/css">.hide_voc {
+  display:none!important;
+  }
+	</style>
+	<script type="text/javascript" src="https://cdnii.e-i.com/SOSD/sd/session_utils/1.0.1/scripts/sessionUtils.min.js"></script>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_needscript.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/SDTK/display.js"></script><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/lightbox.js"></script>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/appli/ei_custom_conseiller.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css">.ei_buttonbar .ei_mainbuttons {float: none;}
+	</style>
+	<script>var espacewat = 'Conseil'</script>
+	<link href="/partage/fr/CC/CIC-2015/styles/styles.css" rel="stylesheet" type="text/css"/>
+	<link href="/partage/fr/I14/CIC/styles/2016/cic.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/appli/ei_custom_conseiller.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_cardboard.css" rel="stylesheet" type="text/css"/>
+	<link href="/partage/fr/I14/CIC/styles/2016/print.css" media="print" rel="stylesheet" type="text/css"/><script type="text/javascript" src="/partage/fr/I14/scripts/cic.js"></script><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/ei_common_cardboard.js"></script><script async="" src="/partage/fr/I14/scripts/tests.js" charset="UTF-8"></script><script type="text/javascript" src="https://cdnii.e-i.com/WEBO/sd/wat/1.0.3//javascripts/tracking_event.js" charset="UTF-8"></script><!-- Datasinks V1 --><script type="text/javascript">
+    function generateUUID() {
+    var dt = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+}
+
+function getCookieDclic(nomCookie) {
+  deb=document.cookie.indexOf(nomCookie+"=");
+  if (deb>=0) {
+    deb+=nomCookie.length+1;
+    fin=document.cookie.indexOf(";",deb);
+    if (fin<0) {
+      fin=document.cookie.length;
+    }
+    return unescape(document.cookie.substring(deb,fin));
+  }
+  else {
+     return "";
+  }
+}
+
+function setLocalCookieDclic(value) {
+  if (!value) {
+    value =  generateUUID();
+  }
+  var date = new Date();
+  date.setTime(date.getTime()+(13*30*24*60*60*1000));
+  document.cookie = "dclic_tid_local="+ value +"; expires="+date.toUTCString()+"; path=/";
+}
+
+if (typeof(navigator) != "undefined" && navigator.doNotTrack != "1" && navigator.msDoNotTrack != "1" && typeof(window) != "undefined" && window.doNotTrack != "1") {
+if (typeof(getCookieDclic) != "undefined" && getCookieDclic('cookies_accepted') != null && getCookieDclic('cookies_accepted') != "") {
+  if (getCookieDclic('cookies_accepted') == "1" || getCookieDclic('cookies_accepted').match("cookie_marketing=true")) {
+
+    function getOrigin() {
+      var subsites = ["cmne", "cmmabn"];
+      var urlpart = window.location.pathname.split('/')[1];
+
+      var found = false;
+      for (var i = 0; i < subsites.length; i++) {
+        if (subsites[i] == urlpart) {
+          found = true;
+          break;
+        }
+      }
+
+      return found === true ? window.location.origin + "/" + urlpart : window.location.origin;
+
+      //return subsites.includes(urlpart) == true ? window.location.origin + "/" + urlpart : window.location.origin;
+    }
+
+    var dclicClient = {
+      info: {
+        v: "1.0.0"
+      },
+      watMap: {
+        "espace": "s1",
+        "user_federation": "s2",
+        "user_agence": "s3",
+        "user_formule_bad": "s4",
+        "user_type_client": "s5",
+        "user_segment": "s8",
+        "user_segment_commercial":"s9",
+        "user_frequence_bad": "s10",
+        "env_work": "s11",
+        "env_langue": "s12",
+        "dir_reg": "s13",
+        "cat_juridique": "s14",
+        "env_espace": "s15",
+        "typepage": "s16",
+        "user_space": "s17",
+        "statutuser": "s18",
+        "substitution_mode": "s19",
+        "user_type_personne": "s20",
+        "user_niveau": "s21",
+        "env_channel": "s22",
+        "relation_group": "s23",
+        "env_marque": "s24",
+        "env_country": "s25",
+        "page_cat1": "s26",
+        "page_cat2": "s27",
+        "page_cat3": "s28",
+        "page_cat4": "s29",
+        "page_cat5": "s30"
+      },
+
+      init: function() {
+        if (typeof(setLocalCookieDclic) != "undefined" && (getCookieDclic('dclic_tid_local') == null || getCookieDclic('dclic_tid_local') == "" )) {
+          setLocalCookieDclic()
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+          dclicClient.pushEvent("Page Viewed");
+        });
+      },
+      setEid: function(value) {
+        dclicClient.info.eid = value;
+      },
+      setAid: function(value) {
+        dclicClient.info.aid = value;
+      },
+      pushEvent: function(name, payload) {
+        var evt = {};
+        payload = payload || {};
+
+        $.extend(evt, payload);
+
+        if(typeof watData !== 'undefined' && typeof tc_vars !== 'undefined') {
+            Object.assign(watData, tc_vars);
+        }
+
+        Object.keys(dclicClient.watMap).forEach(function (key, index) {
+               if(typeof watData !== 'undefined') {
+                   if(watData.hasOwnProperty(key)) {
+                        evt[dclicClient.watMap[key]] = watData[key];
+                   }
+               }
+         });
+
+        $.extend(evt, dclicClient.info);
+        $.extend(evt, {
+          e: name,
+          oc: new Date().toISOString(),
+          dl: document.documentElement.lang,
+          ss: window.screen.width + "x" + window.screen.height,
+          sc: window.screen.colorDepth,
+          tz: new Date().getTimezoneOffset(),
+          bs: window.innerWidth + "x" + window.innerHeight,
+          pc: window.location.pathname.substring(0, 255),
+          ap: ( typeof url_page !== "undefined" ) ? url_page : "",
+          ps: (document.referrer.length > 0 && document.referrer.lastIndexOf(window.location.origin, 0) === 0
+                  ? (function parseurl(){var parser = document.createElement('a'); parser.href = document.referrer; return parser.pathname.substring(0, 255);})()
+                  : ""),
+          pt: document.title,
+          px: Math.round(window.pageXOffset),
+          py: Math.round(window.pageYOffset),
+          s6: ( typeof clientreconnu !== "undefined" && clientreconnu === "Y" ? true : false ),
+          s7: (typeof alias !== "undefined" ? alias : ""),
+          s11: (window.location.href.split('/')[2].charAt(3) === "-") ? window.location.href.split("/")[2].split("-")[0] : "prod",
+          origin: getOrigin()
+        });
+
+        $.ajax({
+            url: "https://dclic-events.e-i.com/",
+            type: "POST",
+            headers: { "Access-Control-Allow-Origin": "*" },
+            crossDomain: true,
+            contentType: "application/json",
+            data: JSON.stringify({dclic_tid_local: getCookieDclic("dclic_tid_local"), data: evt}),
+            dataType: "json",
+            xhrFields: { withCredentials: true },
+            success: function (res) {
+              var tid = null;
+              if (res) {
+                tid = res.dclic_tid;
+                setLocalCookieDclic(res.dclic_tid);
+              }
+              setTimeout(function() {dclicClient.resolve(tid)}, 5000);
+    	      }
+        });
+      },
+      resolve: function(dclic_tid) {
+        var url = "https://dclic-resolver.e-i.com/";
+        if (dclic_tid) {
+          url += dclic_tid;
+        }
+        $.ajax({
+          url: url,
+          type: "GET",
+          headers: { "Access-Control-Allow-Origin": "*" },
+          crossDomain: true,
+          contentType: "application/json",
+          data: {
+            origin: getOrigin()
+          },
+          dataType: "json",
+          xhrFields: { withCredentials: true },
+          success: function(res, status) {
+            if (res !== null && 'dclicseg' in res) {
+              document.cookie = "dclic_seg=" + res.dclicseg + "; path=/";
+            }
+          }
+        });
+      }
+    };
+
+    dclicClient.init();
+
+    
+    function eia(action, data){
+      if (action === "set") {
+        dclicClient.setEid(data.eid);
+        dclicClient.setAid(data.aid);
+      }
+    }
+  }
+}
+}
+    
+</script><!-- Datasinks V1 --><!-- Datasinks V2 --><script type="text/javascript">
+    function getCookieDatasinks(nomCookie) {
+    deb=document.cookie.indexOf(nomCookie+"=");
+    if (deb>=0) {
+        deb+=nomCookie.length+1;
+        fin=document.cookie.indexOf(";",deb);
+        if (fin<0) {
+            fin=document.cookie.length;
+        }
+    return unescape(document.cookie.substring(deb,fin));
+    }
+    else { 
+        return "";
+    }
+}
+
+if (typeof(getCookieDatasinks) != "undefined" && getCookieDatasinks('cookies_accepted') != null && getCookieDatasinks('cookies_accepted') != "") {
+    if (getCookieDatasinks('cookies_accepted') == "1" || getCookieDatasinks('cookies_accepted').match("cookie_marketing=true")) {
+        (function(l, o, a, d, i, n, g) {
+            l.__ds_name__ = i;
+            l[i] = l[i] || function(m) {
+                m = m || "_default";
+                return l[i][m] = l[i][m] || function s(o, f) {
+                    if (
+                        o + f === "usertraits") return function t() {
+                        (t._q = t._q || []).push(arguments)
+                    };
+                    s !== l[i][m] && l[i][m].apply(null, arguments) || (s._q = s._q || []).push(arguments)
+                }
+            };
+            n = o.createElement(a);
+            g = o.getElementsByTagName(a)[0];
+            n.async = 1;
+            n.src = d;
+            g.parentNode.insertBefore(n, g)
+        })(window, document, "script", "https://cdnii.e-i.com/SDUT/sd/datasinks/0.1.0/js/ds.min.js", "ds");
+        if (typeof ds === "function") {
+            ds()("init", {
+                api: "https://ingester.ds2.e-i.com/ing1",
+                seg: "https://ingester.ds2.e-i.com/aud1/segments",
+                pid: "ef70ea6a",
+                cookieDuration: 395
+            });
+            ds()("segments", function(segs) {
+                setTimeout(function() {
+                    if (segs.length > 0) {
+                        // Datasinks V2 segments cookie: max-age=one year
+                        document.cookie = "dsseg=" + segs.join('') + "; max-age=31536000; path=/";
+                    }
+                }, 5000);
+            });
+        }
+    }
+}
+    
+</script><!-- Datasinks V2 -->
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_messenger.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_scrollzone.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_carousel.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<ul id="e_raccourci">
+	<li><a href="/fr/authentification.html">Identification</a></li>
+	<li><a href="#ei_tpl_content">Contenu principal</a></li>
+	<li><a href="#ei_tpl_footer">Pied de page</a></li>
+	<li><a href="/fr/services/messagerie-conversation.html" target="_blank">Votre conseiller</a></li>
+</ul>
+
+<div id="ei_tpl_menuMobil">
+<div id="ei_tpl_mMobContent">
+<div id="ei_tpl_mMobPrincipal"> </div>
+</div>
+</div>
+
+<div class="ei_tpl_conseil ei_nobackground ei_cic2015" id="ei_tpl_fullsite">
+<header data-sticky="" id="ei_tpl_head" role="banner">
+<div id="ei_tpl_head_center">
+<div class="ei_tpl_head_table">
+<div class="ei_tpl_head_td" id="ei_tpl_menuLink"><a alt="Menu" aria-hidden="true" aria-label="Menu" href="#" title="Menu"><span>Menu</span></a></div>
+
+<div class="ei_tpl_head_td" id="ei_tpl_logo"><a href="/fr/index.html"><span><abbr>CIC</abbr></span></a></div>
+
+<div class="ei_tpl_head_td" id="ei_tpl_baseline"><span>Construisons dans un monde qui bouge</span></div>
+
+<div class="ei_tpl_head_td" id="ei_tpl_search">
+<h2 class="invisible">Rechercher</h2>
+
+<form action="" autocomplete="off" class="CMSD_search" id="SRCH_form_header" method="get" name="form_rechercher" role="search"><input type="hidden" value="https://www.cic.fr/fr/authentification.html/fr/search_engine.html"/> <label accesskey="4" class="e_invisible" for="SRCH_top">Rechercher</label> <input class="pQuery e_texte SRCH_CIC SRCH_input" id="SRCH_top" placeholder="Rechercher" type="text"/>
+<div class="autocomplete_search_top autocomplete_search"> </div>
+<input alt="Lancer la recherche" class="e_image" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/transparent.gif" type="image"/> </form>
+<script type="text/javascript">
+var srchConfig = {
+  redirectUrl: "/fr/SearchRedirect.aspx",
+  searchAjaxUrl: "/fr/SearchAjax.html",
+  formUrl: "/fr/search_engine.html"
+};
+</script></div>
+
+<div class="ei_tpl_head_td hide_voc" id="CYB1_VOC"><script type="text/javascript">
+var VOCWithoutLightBox = true;
+var loadContentVOCPath = "/fr/banque/async/SummaryService.aspx";
+var loginURL = "/fr/authentification.html";
+</script>
+<form action="" class="ng-pristine ng-valid" id="MainNotes"><input type="hidden" value="https://www.cic.fr/fr/authentification.html"/>
+<div id="MainVocContainer" title="Avis"> </div>
+</form>
+
+<form action="" class="ng-pristine ng-valid"><input type="hidden" value="https://www.cic.fr/fr/authentification.html"/>
+<div class="ei_hdet_box ei_zindexmid invisible ei_dynabsolutepos" id="det_cnt1">
+<div class="ei_dlgbox ei_hdet_left ei_iblock">
+<div class="ei_dlgbox_body notesAndStats">
+<div>
+<div> </div>
+
+<div> </div>
+</div>
+
+<div class="ei_dlgbox_footer right">
+<div> </div>
+</div>
+</div>
+</div>
+</div>
+</form>
+
+<form action="" class="ng-pristine ng-valid"><input type="hidden" value="https://www.cic.fr/fr/authentification.html"/>
+<div class="ei_hdet_box ei_zindexmid invisible masque ei_dynabsolutepos" id="det_cnt0">
+<div class="ei_dlgbox ei_hdet_left ei_iblock">
+<div class="ei_dlgbox_body notesAndStats">
+<div>
+<div> </div>
+
+<div> </div>
+</div>
+
+<div class="ei_dlgbox_footer right">
+<div class="vocLoadingMessage">
+<p style="text-align: center;"> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+<div class="ei_tpl_head_td" id="ei_tpl_devenirclient">
+<div class="ei_tpl_dclient_content">
+<div>
+<p class="ei_tpl_dclient_title"><a href="https://www.cic.fr/fr/banques/devenir-client.html">Devenir client</a></p>
+
+<p>du CIC</p>
+</div>
+</div>
+</div>
+
+<div class="ei_tpl_head_td ei_tpl_ident" id=" ei_tpl_ident ei_tpl_identcoonexion">
+<div id="ei_tpl_ident">
+<div id="ei_tpl_login">
+<p class="ei_tpl_ident_login_title"><a href="/fr/authentification.html" id="ei_tpl_ident_link">Espace client</a></p>
+
+<p class="ei_tpl_ident_login_subtitle">Connexion</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div id="CYB1_VOC_LIGHTBOX"> </div>
+
+<div data-sticky="" id="ei_tpl_menuPrincipal" role="navigation">
+<div id="ei_tpl_searchmobil">
+<h2 class="invisible">Rechercher</h2>
+
+<form action="" autocomplete="off" class="CMSD_search" id="SRCH_form_header" method="get" name="form_rechercher" role="search"><input type="hidden" value="https://www.cic.fr/fr/authentification.html/fr/search_engine.html"/> <label accesskey="4" class="e_invisible" for="SRCH_top">Rechercher</label> <input class="pQuery e_texte SRCH_CIC SRCH_input" id="SRCH_top" placeholder="Rechercher" type="text"/>
+<div class="autocomplete_search_top autocomplete_search"> </div>
+<input alt="Lancer la recherche" class="e_image" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/transparent.gif" type="image"/> </form>
+<script type="text/javascript">
+var srchConfig = {
+  redirectUrl: "/fr/SearchRedirect.aspx",
+  searchAjaxUrl: "/fr/SearchAjax.html",
+  formUrl: "/fr/search_engine.html"
+};
+</script></div>
+
+<nav id="CMSD_MENU"><!-- Menu.Net MenuHandler-->
+<ul>
+	<li class="e_smenumiddle" id="ei_m_accueil"><a data-page="153006" href="/fr/banques/particuliers/index.html" target="_self">Accueil</a></li>
+	<li class="e_menuinline cc_menu_espace" id="es_menu_espace_particulier"><a data-page="150398" href="/fr/banques/particuliers/index.html" target="_self">Particuliers</a>
+	<div class="e_smenu">
+	<ul>
+		<li class="e_menudepliant  e_smenumiddle"><a data-page="150399" href="/fr/banques/particuliers/gestion-courante.html" target="_self">Comptes et Cartes</a>
+		<div class="e_smenu">
+		<ul>
+			<li><a data-page="150400" href="/fr/banques/particuliers/gestion-courante/gerer-vos-comptes/index.html" target="_self">Gérer vos comptes</a></li>
+			<li><a data-page="150401" href="/fr/banques/particuliers/gestion-courante/regler-vos-depenses/index.html" target="_self">Régler vos dépenses</a></li>
+			<li><a data-page="150402" href="/fr/banques/particuliers/gestion-courante/optimiser-votre-budget/index.html" target="_self">Optimiser votre budget</a></li>
+			<li><a data-page="150403" href="/fr/particuliers/comptes/paiement-en-ligne-securite.html" target="_self">Sécuriser vos opérations</a></li>
+			<li><a data-page="150454" href="/fr/protection-des-donnees-personnelles/index.html" target="_self">Protection des données</a></li>
+			<li><a data-page="150453" href="/fr/banques/particuliers/nous-contacter/simulations-souscriptions.html" target="_self">Simulations et souscriptions</a></li>
+		</ul>
+		</div>
+		</li>
+		<li class="e_menudepliant e_smenumiddle"><a data-page="150456" href="/fr/banques/particuliers/epargne.html" target="_self">Épargne</a>
+		<div class="e_smenu">
+		<ul>
+			<li><a data-page="150457" href="/fr/banques/particuliers/epargne/epargner-au-quotidien/index.html" target="_self">Épargner au quotidien</a></li>
+			<li><a data-page="150458" href="/fr/banques/particuliers/epargne/epargner-pour-un-projet/index.html" target="_self">Épargner pour un projet</a></li>
+			<li><a data-page="150459" href="/fr/banques/particuliers/epargne/valoriser-et-transmettre-un-patrimoine/index.html" target="_self">Valoriser et transmettre un patrimoine</a></li>
+			<li><a data-page="150460" href="/fr/banques/particuliers/epargne/optimiser-votre-fiscalite/index.html" target="_self">Optimiser votre fiscalité</a></li>
+			<li><a data-page="150513" href="/fr/banques/particuliers/nous-contacter/simulations-souscriptions.html" target="_self">Simulations et souscriptions</a></li>
+		</ul>
+		</div>
+		</li>
+		<li class="e_menudepliant e_smenumiddle"><a data-page="150514" href="/fr/banques/particuliers/credits.html" target="_self">Crédits</a>
+		<div class="e_smenu">
+		<ul>
+			<li><a data-page="150515" href="/fr/banques/particuliers/credits/acheter-un-vehicule/index.html" target="_self">Acheter un véhicule</a></li>
+			<li><a data-page="150517" href="/fr/banques/particuliers/credits/acheter-un-logement/index.html" target="_self">Acheter un logement</a></li>
+			<li><a data-page="150520" href="/fr/banques/particuliers/credits/realiser-des-travaux/index.html" target="_self">Financer des travaux</a></li>
+			<li><a data-page="150521" href="/fr/banques/particuliers/credits/equiper-votre-logement/index.html" target="_self">Équiper votre logement</a></li>
+			<li><a data-page="150574" href="/fr/banques/particuliers/credits/financer-imprevus.html" target="_self">Financer vos imprévus</a></li>
+			<li><a data-page="150518" href="/fr/banques/particuliers/credits/financer-des-etudes/index.html" target="_self">Financer des études</a></li>
+			<li><a data-page="150519" href="/fr/banques/particuliers/credits/financer-le-permis-de-conduire/index.html" target="_self">Financer le permis de conduire</a></li>
+			<li><a data-page="150575" href="/fr/banques/particuliers/nous-contacter/simulations-souscriptions.html" target="_self">Simulations et souscriptions</a></li>
+		</ul>
+		</div>
+		</li>
+		<li class="e_menudepliant e_smenumiddle"><a data-page="150576" href="/fr/banques/particuliers/assurances-CIC/index.html" target="_self">Assurances</a>
+		<div class="e_smenu">
+		<ul>
+			<li><a data-page="150577" href="/fr/banques/particuliers/assurances-CIC/assurer-votre-vehicule/index.html" target="_self">Assurer votre véhicule</a></li>
+			<li><a data-page="150578" href="/fr/banques/particuliers/assurances-CIC/assurer-votre-logement/index.html" target="_self">Assurer votre logement</a></li>
+			<li><a data-page="150626" href="/fr/particuliers/assurance-CIC/proteger-votre-logement.html" target="_self">Protéger votre logement</a></li>
+			<li><a data-page="150579" href="/fr/banques/particuliers/assurances-CIC/couvrir-vos-depenses-de-sante/index.html" target="_self">Couvrir vos dépenses de santé</a></li>
+			<li><a data-page="150581" href="/fr/banques/particuliers/assurances-CIC/assurer-votre-famille/index.html" target="_self">Assurer votre famille</a></li>
+			<li><a data-page="150622" href="/fr/banques/particuliers/assurances-CIC/maintenir-vos-revenus/index.html" target="_self">Maintenir vos revenus</a></li>
+			<li><a data-page="150624" href="/fr/banques/particuliers/assurances-CIC/vous-assurer-un-complement-de-retraite/index.html" target="_self">Vous assurer un complément de retraite</a></li>
+			<li><a data-page="150625" href="/fr/banques/particuliers/assurances-CIC/assurer-vos-animaux-et-vos-loisirs/index.html" target="_self">Assurer vos animaux et vos loisirs</a></li>
+			<li><a data-page="150623" href="/fr/banques/particuliers/assurances-CIC/vous-proteger-au-quotidien/index.html" target="_self">Vous protéger au quotidien</a></li>
+			<li><a data-page="150621" href="/fr/banques/particuliers/nous-contacter/simulations-souscriptions.html" target="_self">Simulations et souscriptions</a></li>
+		</ul>
+		</div>
+		</li>
+		<li class="e_menudepliant e_smenumiddle"><a data-page="150627" href="/fr/banques/particuliers/mobile.html" target="_self">Mobile et box</a>
+		<div class="e_smenu">
+		<ul>
+			<li><a data-page="150628" href="/fr/banques/particuliers/mobile/forfaits/index.html" target="_self">Forfaits mobile</a></li>
+			<li><a data-page="150662" href="/fr/banques/particuliers/mobile/telephonie-mobile/index.html" target="_self">Téléphones</a></li>
+			<li><a data-page="150664" href="/fr/banques/particuliers/mobile/box/index.html" target="_self">Box internet et TV</a></li>
+			<li><a data-page="150630" href="/fr/banques/particuliers/mobile/services-CIC-mobile/index.html" target="_self">Objets connectés</a></li>
+		</ul>
+		</div>
+		</li>
+		<li><a data-page="150977" href="/fr/banques/particuliers/nous-contacter/simulations-souscriptions.html" target="_self">Simulations et souscriptions</a></li>
+	</ul>
+	</div>
+	</li>
+</ul>
+<!-- /Menu.Net --></nav>
+</div>
+
+<div id="ei_tpl_contener">
+<div id="ei_tpl_ariane"><!-- Ariane --><span><abbr>CIC</abbr></span> <!-- /Ariane --></div>
+
+<main id="ei_tpl_content" role="main"><noscript><META HTTP-EQUIV="Refresh" CONTENT="0; URL=/fr/navigateur_javascript.html"></noscript></main>
+</div>
+</div>
+
+<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/devb_base.css" rel="stylesheet" type="text/css"/><script type="text/javascript" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/javascript/appli/responsiveMD.js"></script>
+<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_responsive.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/ei_custom_md.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/css/appli/ei_custom_identification.css" rel="stylesheet" type="text/css"/><script type="text/javascript">
+/**************************** CONSOLE DEBUG ACTIVATION *************************************/
+if (!window.console) {
+    window.console = {};
+}
+else {
+    if (!window.console.debug && typeof window.console.log !== 'undefined') {
+        window.console.debug = window.console.log;
+    }
+}
+var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml",
+    "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+for (var i = 0; i < names.length; ++i) {
+    if (!window.console[names[i]]) {
+        window.console[names[i]] = function() {};
+    }
+}
+/*******************************************************************************************/
+
+if (typeof jQuery == 'undefined') {
+    throw "Authentication required JQuery";
+}
+
+/* Array item's order should respect the order of the menu */
+var authApps = [];
+authApps.push({ baseId: 'password' , scriptMethodName: '', scriptLoaded: false});
+authApps.push({ baseId: 'ksign' , scriptMethodName: 'loadScriptsKSign', scriptLoaded: false});
+authApps.push({ baseId: 'safetrans' , scriptMethodName: 'loadScriptsSafetrans', scriptLoaded: false});
+
+/* url to codes acces oublies */
+var forgotAccessUrl = '';
+
+/* url to security infos */
+var infoSecurityUrl = '';
+
+/* url to webmaster informations bloc */
+var infoUrlPwd = '';
+var infoUrlKSign = '';
+var infoUrlKSafetrans = '';
+
+function showApps(index) {
+    if (index < 0) {
+        index = 0;  // Default is password
+    }
+
+    if (index < authApps.length) {
+        var $app = $('#' + authApps[index].baseId);
+        var $marketing = $(".ei_ident_marketing_" + authApps[index].baseId);
+        if ($app.length) {
+            if (authApps[index].scriptLoaded == false && authApps[index].scriptMethodName.length){
+                loadAsynchronousScripts(authApps[index].scriptMethodName);
+                authApps[index].scriptLoaded = true;
+            }
+            $app.css('display', '');
+            if ($marketing.length) {
+                $marketing.css('display', '');
+            }
+            $app.find('input:first').focus();
+            eraseCookie('lastCnx');
+            createCookie('lastCnx',authApps[index].baseId, 30)
+        }
+    }
+}
+
+function hideAllApps() {
+    var allApps = [];
+    // All DOM read
+    for (var i = 0; i < authApps.length; ++i) {
+        allApps.push({ $app: $('#' + authApps[i].baseId), $marketing: $(".ei_ident_marketing_" + authApps[i].baseId) });
+    }
+    // All DOM write
+    for (var i = 0; i < allApps.length; ++i) {
+        if (allApps[i].$app.length) {
+            allApps[i].$app.css('display', 'none');
+        }
+        if (allApps[i].$marketing.length) {
+            allApps[i].$marketing.css('display', 'none');
+        }
+    }
+}
+
+function loadAsynchronousScripts(name) {
+    if (typeof window[name] == 'function') {
+        // Call asynchronously
+        setTimeout(function() {
+            window[name]();
+        }, 0);
+    }
+}
+
+function mapAuthenticationModeToIndex(authenticationMode) {
+    var index = 0;
+    for (var i = 0; i < authApps.length; ++i) {
+        if (authApps[i].baseId == authenticationMode) {
+            index = i;
+            break;
+        }
+    }
+    return index;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; ++i) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function createCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/" + "; secure; ";
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+
+function loadAsynchronousMarketingContent($marketingElement, url) {
+    if ($marketingElement.length) {
+        if (url.length == 0) {
+            $marketingElement.html('');
+            return;
+        }
+        $.ajax({
+            type: "get",
+            url: url,
+            success: function (html) {
+                $marketingElement.html(html);
+            },
+            error: function (e) {
+                $marketingElement.html('');
+            },
+            dataType: "html"
+        });
+    }
+}
+
+function setIdLien() {
+    /* Defaults spaces is Aucun then Particuliers */
+    /* In space Aucun */
+    forgotAccessUrl_aucun = "/fr/banques/assistance-technique.html";
+    infoSecurityUrl_aucun = "/fr/banques/internet-et-securite-bancaire/index.html";
+    infoUrlPwd_aucun = "/fr/informations_mdp.html";
+    infoUrlKSign_aucun = "/fr/informations_ksign.html";
+    infoUrlKSafetrans_aucun = "/fr/informations_safetrans.html";
+
+    /* In space Particuliers */
+    forgotAccessUrl_particulier = "/fr/banques/particuliers/nous-contacter/assistance-technique.html";
+    infoSecurityUrl_particulier = "/fr/banques/particuliers/internet-et-securite-bancaire/index.html";
+    infoUrlPwd_particulier = "/fr/particuliers/informations_mdp.html";
+    infoUrlKSign_particulier = "/fr/particuliers/informations_ksign.html";
+    infoUrlKSafetrans_particulier = "/fr/particuliers/informations_safetrans.html";
+
+    /* Default Values */
+    forgotAccessUrl = '';
+    infoSecurityUrl = (infoSecurityUrl_aucun == '') ? infoSecurityUrl_particulier : infoSecurityUrl_aucun;;
+    infoUrlPwd = '';
+    infoUrlKSign = '';
+    infoUrlKSafetrans = '';
+
+    var espace = null;
+    if (typeof getEspace == 'function') {
+        espace = getEspace();
+
+        if (espace != null) {
+            /* Set idlink according to space cookie value */
+            switch (espace){
+                    case "Professionnel":
+                        forgotAccessUrl = "/fr/banques/professionnels/nous-contacter/assistance-technique.html";
+                        infoUrlPwd = "/fr/professionnels/informations_mdp.html"
+                        infoUrlKSign = "/fr/professionnels/informations_ksign.html"
+                        infoUrlKSafetrans = "/fr/professionnels/informations_safetrans.html"
+                        break;
+                    case "Entreprise":
+                        forgotAccessUrl = "/fr/banques/entreprises/nous-contacter/assistance-technique.html";
+                        infoUrlPwd = "/fr/entreprises/informations_mdp.html"
+                        infoUrlKSign = "/fr/entreprises/informations_ksign.html"
+                        infoUrlKSafetrans = "/fr/entreprises/informations_safetrans.html"
+                        break;
+                    case "Grand compte":
+                        forgotAccessUrl = "/fr/banques/corporate/nous-contacter/assistance-technique.html";
+                        infoUrlPwd = "/fr/corporate/informations_mdp.html"
+                        infoUrlKSign = "/fr/corporate/informations_ksign.html"
+                        infoUrlKSafetrans = "/fr/corporate/informations_safetrans.html"
+                        break;
+                    case "Particulier":
+                        forgotAccessUrl = "/fr/banques/particuliers/nous-contacter/assistance-technique.html";
+                        infoUrlPwd = "/fr/particuliers/informations_mdp.html"
+                        infoUrlKSign = "/fr/particuliers/informations_ksign.html"
+                        infoUrlKSafetrans = "/fr/particuliers/informations_safetrans.html"
+                        break;
+                    case "Association":
+                        forgotAccessUrl = "/fr/banques/associations/nous-contacter/assistance-technique.html";
+                        infoUrlPwd = "/fr/associations/informations_mdp.html"
+                        infoUrlKSign = "/fr/associations/informations_ksign.html"
+                        infoUrlKSafetrans = "/fr/associations/informations_safetrans.html"
+                        break;
+                    default:
+                        break;
+            }
+        }
+    }
+
+    if (!forgotAccessUrl.length) {
+        forgotAccessUrl = (forgotAccessUrl_aucun == '') ? forgotAccessUrl_particulier : forgotAccessUrl_aucun;
+    }
+
+    if (!infoUrlPwd.length) {
+        infoUrlPwd = (infoUrlPwd_aucun == '') ? infoUrlPwd_particulier : infoUrlPwd_aucun;
+    }
+
+    if (!infoUrlKSign.length) {
+        infoUrlKSign = (infoUrlKSign_aucun == '') ? infoUrlKSign_particulier : infoUrlKSign_aucun;
+    }
+
+    if (!infoUrlKSafetrans.length) {
+        infoUrlKSafetrans = (infoUrlKSafetrans_aucun == '') ? infoUrlKSafetrans_particulier : infoUrlKSafetrans_aucun;
+    }
+}
+
+function redirectToLink(link) {
+    window.location = link;
+    return false;
+}
+
+$(document).ready(function(){
+
+    $('p.liensctx').append($("#exceptionalBreak").html());
+
+    setIdLien();
+
+    var $market_mdp_app = $(".ei_ident_marketing_password");
+    var $market_ksign_app = $(".ei_ident_marketing_ksign");
+    var $market_safetrans_app = $(".ei_ident_marketing_safetrans");
+    loadAsynchronousMarketingContent($market_mdp_app, infoUrlPwd);
+    loadAsynchronousMarketingContent($market_ksign_app, infoUrlKSign);
+    loadAsynchronousMarketingContent($market_safetrans_app, infoUrlKSafetrans);
+
+    var lastSelected = mapAuthenticationModeToIndex(getCookie("lastCnx"));
+    var selectedItemTxt = "selected_item_text";
+    var txt = $('div.ei_md li.ei_md_masteritem').eq(lastSelected).find('a.ei_md_masterlink').text();
+    contentloading(lastSelected, txt);
+
+    function contentloading(_index, _itemtxt) {
+        hideAllApps();
+        showApps(_index);
+
+        var txt = _itemtxt;
+        var ind = txt.indexOf(selectedItemTxt, 0);
+        if (ind > 0) {
+            txt = txt.substring(0,ind);
+        }
+        $('div.ei_md div.ei_md_detail #idTitre').text(txt);
+        if (lastSelected > -1) {
+            $('div.ei_md li.ei_md_masteritem').eq(lastSelected).removeClass("ei_md_selected");
+            $('div.ei_md li.ei_md_masteritem').eq(lastSelected).removeAttr('aria-current');
+            $('div.ei_md div.ei_md_mastertxt').eq(lastSelected).find('a.ei_md_masterlink').removeAttr('title');
+            $('div.ei_md div.ei_md_mastertxt').eq(lastSelected).find('a.ei_md_masterlink span').remove('.invisible');
+        }
+        if (_index > -1){
+            $('div.ei_md li.ei_md_masteritem').eq(_index).addClass("ei_md_selected");
+            $('div.ei_md li.ei_md_masteritem').eq(_index).attr('aria-current', 'true');
+            $('div.ei_md div.ei_md_mastertxt').eq(_index).find('a.ei_md_masterlink').attr('title',txt ).append('<span class="invisible">' + selectedItemTxt +'</span>');
+            lastSelected = _index;
+        }
+    }
+
+    $('div.ei_md li.ei_md_masteritem').click(function(e){
+        var indexItem = $('div.ei_md li.ei_md_masteritem').index($(this));
+        contentloading(indexItem, $(this).find('a.ei_md_masterlink').text());
+        return false;
+    });
+
+    $('div.ei_md div.ei_md_mastertxt a.ei_md_masterlink').focus(function(){
+        $(this).closest("div.ei_md_mastertxt").addClass("ei_md_hasfocus");
+    });
+
+    $('div.ei_md div.ei_md_mastertxt a.ei_md_masterlink').blur(function(){
+        $(this).closest("div.ei_md_mastertxt").removeClass("ei_md_hasfocus");
+    });
+
+    $('div.ei_md div.ei_md_mastertxt a.ei_md_masterlink').keydown(function(e){
+        if (e.which == 13) {
+            $(this).closest("li.ei_md_masteritem").trigger("click");
+            e.preventDefault();
+        }
+    });
+   /*
+    $('#bloc_ident').on('submit', function(e) {
+        e.preventDefault();
+
+        var $this = $(this);
+
+        var postParam =  {"loginPasswordAuthenticationRequest":{'applicationId': 'CM', 'login': $('#_userid').val(), 'password': $('#_pwduser').val(), 'media':'AN'}};
+
+        $.ajax({
+            url: '/fr/ws/login_password_ws.html',
+            type: 'POST',
+            data: JSON.stringify(postParam),
+            success: function(json) {
+                if (json.returnCode === 'Success') {
+                    redirectToLink('/fr/banque/pageaccueil.html');
+                } else {
+                    $(".blocpatience2").remove();
+                    $("#errorMessage").text(json.returnMessage);
+                    $(".errorMessageBlock").css('display', '');
+                }
+            },
+            error: function(xhr, textStatus, error) {
+                 $(".blocpatience2").remove();
+                 $("#errorMessage").text(error);
+                 $(".errorMessageBlock").css('display', '');
+            }
+        });
+    }); */
+});
+
+</script>
+<div class="a_blocappli">
+<div class="ei_titleblock ei_mdr_maintitle">
+<div class="ei_titlelabelsblock">
+<div class="ei_titlelabel">
+<p aria-level="1" role="heading">Espace client : Connexion</p>
+</div>
+</div>
+</div>
+
+<div class="a_blocfctl">
+<div class="ei_md ei_mdr_formselectorlistbox">
+<div class="ei_md_envtech">
+<div class="ei_md_master">
+<div class="ei_md_masterbody">
+<ul class="ei_md_masterroot">
+	<li class="ei_md_masteritem">
+	<div class="ei_md_mastertxt"><a class="ei_md_masterlink" href="#">Identifiant / Mot de passe</a></div>
+	</li>
+	<li class="ei_md_masteritem">
+	<div class="ei_md_mastertxt"><a class="ei_md_masterlink" href="#">Certificat Électronique</a></div>
+	</li>
+	<li class="ei_md_masteritem">
+	<div class="ei_md_mastertxt"><a class="ei_md_masterlink" href="#" id="menu_safetrans">SAFETRANS</a></div>
+	</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="ei_md_separator"> </div>
+
+<div class="ei_md_detail" tabindex="-1"><!--Deb--><!--Fin-->
+<div class="a_blocfctl" id="contentDetail">
+<div id="password"><!--<div class="alerteBlock" id="info_bloc_tls" style="display: none;">
+                            <div class="bloctxt alerte eir_hidexs">
+                                <strong>Votre navigateur est obsolète</strong>
+                                <p>Pour des raisons de sécurité, vous ne pourrez bientôt plus accéder à votre espace Client avec ce navigateur.<br>Pour continuer d'accéder à votre espace Client <a href="/fr/navigateur_obsolete.html">veuillez mettre à jour votre navigateur</a></p>
+                        </div>
+                        </div>
+                        <script>
+                        $.ajax("https://sslsi.e-i.com/")
+                          .done(function(data) {
+                              // nothing to do
+                          })
+                          .fail(function(xhr, status, error) {
+                              //Ajax request failed.
+                              $('#info_bloc_tls').show();
+                        })
+                        </script>-->
+<div class="alerteBlock" style="display:none">
+<div class="bloctxt alerte eir_hidexs"> </div>
+
+<div class="bloctxt alerte eir_showxs"> </div>
+</div>
+
+<div class="errorMessageBlock bloctxt err" style="display:none"> </div>
+
+<div>
+<div class="ei_appl_ident" id="ident">
+<p class="a_titre1"> </p>
+
+<form action="" autocomplete="off" id="bloc_ident" method="post" name="bloc_ident" onsubmit="return submitForm()"><input type="hidden" value="https://www.cic.fr/fr/authentification.html"/>
+<fieldset>
+<div class="ei_appl_ident_content">
+<div class="ei_appl_ident_lig"><label for="_userid">Identifiant</label> <input class="ei_appl_userid" id="_userid" maxlength="48" placeholder="" type="text" value=""/> <input type="hidden" value="password"/> <input type="hidden"/></div>
+
+<div class="ei_appl_ident_lig"><label for="_pwduser">Mot de passe</label> <input class="ei_appl_pwduser" id="_pwduser" maxlength="64" name="password" placeholder="" type="password"/></div>
+<script type="text/javascript">
+                    var formSubmitted = false;
+                    function submitForm() {
+                        if (formSubmitted) {
+                            return false;
+                        } else {
+                            formSubmitted = true;
+
+                            
+                                
+                                
+                                    esd1_displayWait('ident', 'Connexion en cours', 'Veuillez patienter');
+                                
+                            
+
+                            return true;
+                        }
+                    }
+                </script></div>
+</fieldset>
+
+<div class="ei_appl_ident_blocbts blocboutons"><span class="ei_buttonbar"><span class="ei_mainbuttons"><span class="ei_button" id="login-submit"><a aria-labelledby="label-validate" class="ei_btn" href="#" onclick="document.getElementById(&#39;bloc_ident&#39;).submit();esd1_displayWait(&#39;ident&#39;, &#39;Connexion en cours&#39;, &#39;Veuillez patienter&#39;);" role="button"><span class="ei_btn_body" id="label-validate"><span class="ei_btn_label">Se connecter</span> <span class="ei_iblock ei_btn_pic" role="presentation"> </span> </span> <span class="ei_btn_footer" role="presentation"> </span> </a> </span> <script type="text/javascript">
+                            var $bloc_ident = $("#bloc_ident");
+                            // submit form with enter (13) key when focus is on identifier/password input
+                            $bloc_ident.on("keydown", "input", function(e) {
+                                if(e.keyCode == 13) {
+                                    $bloc_ident.submit();
+                                }
+                            });
+
+                            $('#login-submit').on('keypress', function(e) {
+                                // enter (13) or space (32) key pressed
+                                if (e.keyCode == 13 || e.keyCode == 32) {
+                                    $bloc_ident.submit();
+                                    e.preventDefault(); // avoid scrolling when space key is pressedif (e.keyCode == 13) {
+                                }
+                            });
+
+                            var $userid = $("#bloc_ident input[id=_userid]");
+                            if ($userid.is(":visible")) {
+                                $userid.focus();
+                            }
+                            else {
+                                // case of memorized user id, set focus on password input
+                                $("#bloc_ident input[id=_pwduser]").focus();
+                            }
+                        </script> </span> </span></div>
+<script>
+        var page_name ="";
+var url_page = "";
+var space = "";
+var subspace = "";
+var env_template="FORMULAIRE";
+var application_name="AUTHENTIFICATION";
+var subscription_form_step="";
+var errors="";
+var idAnnonceContenu="";
+var utilisation_slider_montant="";
+var utilisation_slider_duree="";
+var utilisation_slider_mensualite="";
+var prjcli_modification_projet = "";
+var prjcli_modification_nom_projet = "";
+var product_name ="";
+var subscription_form_step ="";
+var souscription_etape ="";
+var produit_reco = "";
+var client_eligible = "";
+        </script></form>
+</div>
+</div>
+
+<p class="liensctx c"><a class="ei_acces" href="#" onclick="return redirectToLink(forgotAccessUrl);">Codes d&#39;accès oubliés</a> <a class="ctx" href="#" onclick="return redirectToLink(infoSecurityUrl);">Infos sécurité</a></p>
+</div>
+
+<div id="cab" style="display:none">
+<div> </div>
+</div>
+
+<div id="ksign" style="display:none">
+<div class="c"><script>
+function loadScriptsKSign() {
+    $("#certificate_img").attr("src", "https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/appli/authent/certificat.png");
+}
+</script><a href="https://cert.cic.fr/cic/fr/identification/client_cert.cgi" title="Connexion avec Certificat Électronique"><img alt="Connexion avec Certificat Électronique" data-src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/appli/authent/certificat.png" height="142" id="certificate_img" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" style="margin:10.5px 10px 10px" width="300"/> </a>
+
+<div class="bloctxt info">
+<p><em>Pensez à introduire votre certificat avant de cliquer sur &#34;Se connecter&#34;.</em></p>
+</div>
+<!--<div class="bloctxt alerte">
+    <p><em>Si vous rencontrez des difficultés de connexion, une mise à jour du certificat installé sur votre navigateur est peut-être nécessaire. Dans ce cas, suivez les étapes décrites dans <a target="_blank" href="/medias/authentication/generic_1.0/pdf/v190529_maj_ksign.pdf">ce document</a>.</em></p>
+</div>-->
+
+<div class="blocboutons"><input alt="Se connecter" name="submit" onclick="eraseCookie(&#39;lastCnx&#39;); createCookie(&#39;lastCnx&#39;,&#39;ksign&#39;,365); location.href = &#39;https://cert.cic.fr/cic/fr/identification/client_cert.cgi&#39;" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/seconnecter.png" type="image"/></div>
+</div>
+
+<p class="liensctx c"><a class="ei_acces" href="#" onclick="return redirectToLink(forgotAccessUrl);">Codes d&#39;accès oubliés</a> <a class="ctx" href="/fr/connection_management_help_ksign.html">Aide à la connexion</a> <a class="ctx" href="#" onclick="return redirectToLink(infoSecurityUrl);">Infos sécurité</a></p>
+</div>
+
+<div id="safetrans" style="display:none">
+<div><script type="text/javascript">
+    function loadScriptsSafetrans() {
+        loadSafetransScript('https://cdnii.e-i.com/SDUT/sd/gemalto_ezio_web_connector/3.1.3/js/sconnect_uc.min.js');
+        loadSafetransScript('https://cdnii.e-i.com/SDUT/sd/gemalto_ezio_web_connector/3.1.3/js/pcsc_uc.min.js');
+        loadSafetransScript('https://cdnii.e-i.com/SDUT/sd/gemalto_ezio_web_connector/3.1.3/js/logging.min.js');
+        loadSafetransScript('https://cdnii.e-i.com/SDUT/sd/gemalto_ezio_web_connector/3.1.3/js/enex.min.js');
+        loadSafetransScript('https://cdnii.e-i.com/SDUT/sd/secure_channel/1.1.0/js/secure_channel.min.js', initializeSafetransScript);
+    }
+
+    function loadSafetransScript(url, callback) {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = false;
+        s.src = url;
+        if (typeof callback === 'function') {
+            s.onload = callback;
+        }
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+    }
+
+    function initializeSafetransScript() {
+        // Initialize variable from secure_channel script
+        _serverCertificateSerialNumber = "_5DED172B8CAC3D52C290398B";
+        _gemaltoEzioWebConnectorCdnPath = "https://cdnii.e-i.com/SDUT/sd/gemalto_ezio_web_connector/3.1.3/";
+    }
+
+    var secureChannelIdentificationVerificator = null;
+
+    function SecureChannelIdentificationVerificator() {
+        this.styleVisible = document.getElementById("identification_form").style.display;
+    }
+
+    SecureChannelIdentificationVerificator.prototype.onReaderAvailable = function() {
+        document.getElementById("identification_form").style.display = "none";
+        document.getElementById("ejectCard").style.display="block";
+    }
+
+    SecureChannelIdentificationVerificator.prototype.onCardIn = function() {
+        document.getElementById("identification_form").style.display = "none";
+        document.getElementById("ejectCard").style.display="block";
+    }
+
+    SecureChannelIdentificationVerificator.prototype.onCardOut = function() {
+        document.getElementById("identification_form").style.display=this.styleVisible;
+        document.getElementById("ejectCard").style.display="none";
+    }
+
+    SecureChannelIdentificationVerificator.prototype.onReaderOut = function() {
+        document.getElementById("identification_form").style.display=this.styleVisible;
+        document.getElementById("ejectCard").style.display="none";
+    }
+
+    function SecureChannelIdentificationVerificatorLoad(id) {
+        secureChannelIdentificationVerificator = new SecureChannelIdentificationVerificator();
+        if (typeof(addApplication) == "function")
+        {
+            addApplication(secureChannelIdentificationVerificator, "SecureChannelIdentificationVerificator");
+        }
+        document.getElementById(id).focus();
+    };
+
+    window.onload = function() {
+        SecureChannelIdentificationVerificatorLoad('_userid');
+    }
+</script>
+<div class="ei_appl_ident" id="ident_safetrans" style="margin: 0px !important">
+<div class="blocmsg info" id="ejectCard" style="display:none;">
+<p>Veuillez retirer votre carte du lecteur</p>
+</div>
+
+<div id="identification_form"> 
+<form action="" autocomplete="off" method="post" name="bloc_ident_safetrans" onsubmit="return submitFormSafetrans()"><input type="hidden" value="https://www.cic.fr/fr/authentification.html#safetrans"/>
+<fieldset>
+<div class="ei_appl_ident_content">
+<div class="ei_appl_ident_lig"><label for="_userid">Identifiant</label> <input class="ei_appl_userid" id="_userid" type="text" value=""/></div>
+
+<div class="ei_appl_ident_lig"><label for="_pwduser">Mot de passe</label> <input class="ei_appl_pwduser" id="_pwduser" name="password" type="password"/> <input type="hidden" value="safetrans"/></div>
+<script type="text/javascript">
+                    document.forms["bloc_ident_safetrans"]._userid.focus();
+                    var formSubmitted = false;
+                    function submitFormSafetrans() {
+                        if (formSubmitted) {
+                            return false;
+                        } else {
+                            formSubmitted = true;
+                            return true;
+                        }
+                    }
+                </script></div>
+</fieldset>
+
+<div class="ei_appl_ident_blocbts"><input alt="Se connecter" onclick="esd1_displayWait(&#39;ident_safetrans&#39;, &#39;Chargement en cours&#39;, &#39;Veuillez patienter&#39;);" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/seconnecter.png" type="image"/></div>
+</form>
+</div>
+</div>
+<!-- Hub Transferts - SConnect installation message lightbox -->
+
+<div id="idLightBox">
+<div aria-describedby="idTitle" class="ei_blocmodal" role="dialog">
+<div class="a_blocfctltitre">
+<p class="a_options"><a class="btnclose" href="#" id="btnclose" onclick="CloseLightBox(&#39;idLightBox&#39;)"><img alt="Fermer" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/btfermerpopup.png"/></a></p>
+
+<p class="a_titre2" id="idTitle">Extension SConnect</p>
+</div>
+
+<div aria-describedby="idlibelle" class="a_blocfctl" id="idContent">
+<div id="idlibelle">
+<div>L&#39;extension SConnect n&#39;est pas installée sur votre poste.<br/>
+<br/>
+Pour pouvoir utiliser votre lecteur SAFETRANS avec l&#39;application Hub Transferts, veuillez d&#39;abord procéder à l&#39;installation de l&#39;extension SConnect depuis votre navigateur Internet Explorer (ou Safari pour les utilisateurs Mac OS).</div>
+</div>
+
+<div class="blocboutons"><br/>
+<a href="#" id="btnok" onclick="CloseLightBox(&#39;idLightBox&#39;)"><img alt="OK" src="https://cdnii.e-i.com/INGR/sd/cic_2015/13.83.18/fr/images/std/ok.gif"/> </a></div>
+</div>
+<span onfocus="$(&#39;#btnclose&#39;).focus();" role="presentation"> </span></div>
+</div>
+</div>
+
+<p class="liensctx c"><a class="ei_acces" href="#" onclick="return redirectToLink(forgotAccessUrl);">Codes d&#39;accès oubliés</a> <a class="ctx" href="/fr/identification/se-connecter-avec-un-lecteur-safetrans.html">Aide et diagnostic</a> <a class="ctx" href="#" onclick="return redirectToLink(infoSecurityUrl);">Infos sécurité</a></p>
+</div>
+
+<div id="exceptionalBreak" style="display:none"> </div>
+</div>
+</div>
+
+<div class="ei_md_endseparator"> </div>
+</div>
+</div>
+</div>
+
+<div id="ei_tpl_footer">
+<footer role="contentinfo">
+<nav>
+<div id="ei_tpl_footer1">
+<ul><!--<li class="ei_caisses"><a href="/fr/banques/trouver-une-agence.html">Agences et distributeurs</a></li>-->
+	<li class="ei_caisses"><a href="">Agences et distributeurs</a></li>
+	<li class="ei_aide"><a href="/fr/banques/aide-et-accessibilite.html">Assistance</a></li>
+	<li class="ei_accessibilite"><a href="/fr/accessibilite/aide-et-accessibilite.html">Accessibilité</a></li>
+	<li class="ei_contact"><a href="/fr/banques/contacts.html">Contacts</a></li>
+	<li class="ei_newsletter"><a href="/fr/newsletter.html" lang="en">Newsletter</a></li>
+	<li class="ei_reseaux"><a href="/fr/banques/le-cic-sur-les-reseaux-sociaux.html">Réseaux sociaux</a></li>
+	<li class="ei_assistance"><a href="/fr/banques/internet-et-securite.html">Internet et sécurité bancaire</a></li>
+</ul>
+</div>
+
+<div id="ei_tpl_footer2">
+<ul>
+	<li id="ei_espacededies">
+	<nav class="selectNav"><button aria-expanded="false">Espaces dédiés</button>
+
+	<ul hidden="hidden">
+		<li><a href="/fr/banques/particuliers/index.html">Particuliers</a></li>
+		<li><a href="/fr/banques/professionnels/index.html">Professionnels</a></li>
+		<li><a href="/fr/banques/entreprises/index.html">Entreprises</a></li>
+		<li><a href="/fr/banques/corporate/index.html">Corporate</a></li>
+		<li><a href="/fr/banques/associations/index.html">Associations</a></li>
+	</ul>
+	</nav>
+	</li>
+	<li>
+	<nav class="selectNav"><button aria-expanded="false">Nos applications mobiles</button>
+	<ul hidden="hidden">
+		<li><a href="https://play.google.com/store/apps/details?id=com.cic_prod.bad">Android</a></li>
+		<li><a href="https://itunes.apple.com/fr/app/appli-cic/id1436157872?mt=8">iPhone</a></li>
+	</ul>
+	</nav>
+	</li>
+	<li>
+	<nav class="selectNav"><button aria-expanded="false">Le groupe CIC</button>
+	<ul hidden="hidden">
+		<li><a href="/fr/banques/institutionnel/carte-d-identite-du-CIC/index.html">Carte d’identite du CIC</a></li>
+		<li><a href="/fr/banques/institutionnel/publications/index.html">Publications</a></li>
+		<li><a href="/fr/banques/institutionnel/actionnaires-et-investisseurs/index.html">Actionnaires et investisseurs</a></li>
+		<li><a href="/fr/banques/institutionnel/partenariats-et-mecenat/index.html">Partenariats et mécénat</a></li>
+		<li><a href="/fr/banques/recrutement/index.html">Recrutement</a></li>
+	</ul>
+	</nav>
+	</li>
+</ul>
+</div>
+
+<div id="ei_tpl_footerlinks">
+<ul><!-- <li><a href="/fr/banques/recrutement/index.html">Recrutement</a></li> -->
+	<li><a href="https://recrutement.cic.fr/fr/index.html" id="aRecrutement" target="_blank" title="Recrutement, recrutement.cic.fr, nouvelle fenêtre">Recrutement</a></li>
+	<li><a href="/fr/informations-legales/tarifs.html">Tarifs et conditions générales</a></li>
+	<li><a href="/fr/plan-du-site.html">Plan du site</a></li>
+	<li><a href="/fr/informations-legales/mentions-legales.html">Mentions légales</a></li>
+	<li><a href="/fr/informations-legales/index.html">Informations réglementaires</a></li>
+	<li><a href="/fr/protection-des-donnees-personnelles/index.html">Protection des données</a></li>
+	<li><a href="/fr/informations-legales/gestion-des-cookies.html">Gestion des cookies</a></li>
+	<li><a href="/fr/accessibilite/declaration-accessibilite.html">Accessibilité : Non conforme</a></li>
+	<li class="ei_sm_footer_line"> </li>
+</ul>
+<script type="text/javascript">
+	var serveur = window.location.hostname.slice(0,4);
+	//console.log("@serveur "+serveur);/* serveur => tst-, sit-, rqt-, www. */
+	if(serveur == "tst-" || serveur == "sit-" || serveur == "rqt-"){
+		var eltLienRecrutement = document.getElementById("aRecrutement");
+		eltLienRecrutement.setAttribute("href", eltLienRecrutement.getAttribute("href").replace("//recrutement","//"+serveur+"recrutement"));
+		eltLienRecrutement.setAttribute("title", eltLienRecrutement.getAttribute("title").replace("recrutement.",serveur+"recrutement."));
+	}
+</script><span class="invisible">Choix d&#39;une langue</span>
+
+<ul id="ei_tpl_lang">
+	<li class="e-select"><span>FR</span></li>
+	<!--
+	<script>
+	var lurl = window.location.pathname;
+	if(lurl == "/fr/authentification.html" || lurl == "/fr/banque/pageaccueil.html"){
+	var emplacement = lurl.substring(3);
+	console.log('emplacement');
+	}
+	else {
+	var emplacement = '/';
+	}
+			document.write('<li><a href="/en'+emplacement+'" lang="en" hreflang="en" aria-label="English version" title="English version">EN</a></li>');
+			document.write('<li><a href="/de'+emplacement+'" lang="de" hreflang="de" aria-label="Deutsch Version" title="Deutsch Version">DE</a></li>');
+			document.write('<li><a href="/es'+emplacement+'" lang="es" hreflang="es" aria-label="Versión española" title="Versión española">ES</a></li>');
+	</script>
+	-->
+	<li><a aria-label="English version" href="/en/" hreflang="en" lang="en" title="English version">EN</a></li>
+	<li><a aria-label="Deutsch Version" href="/de/" hreflang="de" lang="de" title="Deutsch Version">DE</a></li>
+	<li><a aria-label="Versión española" href="/es/" hreflang="es" lang="es" title="Versión española">ES</a></li>
+</ul>
+
+<div class="nof"> </div>
+<a aria-label="Retour haut de page" href="#ei_tpl_fullsite" id="ei_tpl_hpage" title="Retour haut de page">Top</a></div>
+</nav>
+</footer>
+</div>
+
+<div class="ei_cookie" id="ei_cookie" style="display:none;">
+<div class="ei_cookie__wrapper">
+<p>En poursuivant votre navigation sur notre site, vous acceptez l&#39;utilisation de cookies pour sécuriser votre connexion, faciliter votre navigation, vous proposer des offres adaptées et permettre l&#39;élaboration de statistiques. Informations cookies et paramétrage, <a href="/fr/informations-legales/gestion-des-cookies.html" target="_blank" title="Page de présentation des cookies">cliquez ici.</a></p>
+
+<div class="ei_cookie__blocboutons"><button class="allow" onclick="acceptallcookies(pathCookie);location.reload();" title="Accepter l&#39;utilisation des cookies" type="button">OK</button></div>
+</div>
+</div>
+<script type="text/javascript" src="https://cdnii.e-i.com/SITW/sd/tools/1.14.0/javascripts/SITW-tools.js"></script><!-- <script type="text/javascript" src="/fr/html/gabarit/sitw-cookies.js"></script>
+ --><script type="text/javascript">
+	document.body.onload = '';
+	var pathCookie = "/fr/";
+	document.addEventListener("DOMContentLoaded", function(event){
+		checkAndSetCookiesAcceptance(['/fr/informations-legales/gestion-des-cookies.html'], pathCookie);
+	});
+	</script><!-- Fin code bandeau cookie CNIL --><script type="text/javascript">
+	if($("#ei_tpl_ident_ok").length>0){
+		$("body").addClass("ei_tpl_conseil_ident");
+	}
+</script><!-- Web Analytics --><script type="text/javascript">
+if (typeof(page_name) == 'undefined') var page_name = "CIC";
+if (typeof(espacewat) == 'undefined') var espacewat = "";
+if (typeof(url_page) == 'undefined') var url_page = "";
+if (typeof(env_template) == 'undefined' || env_template == "") var env_template = 'page';
+var clientidentifie = 'false';
+var clientreconnu = 'N';
+var user_statut = '';
+if (clientidentifie == "false" && clientreconnu == "N"){
+	user_statut = "prospect";
+	}
+else if (clientidentifie == "false" && clientreconnu == "Y") {
+	user_statut = "client reconnu";
+	}
+else if (clientidentifie == "true") {
+	user_statut = "client authentifie";
+};
+	var watData = {
+		page_name:page_name,
+		espace:espacewat,
+		typepage:env_template,
+		statutuser:user_statut,
+		env_channel:"",
+		user_profil_cb:"",
+		user_profil_assurance:"",
+		user_profil_bourse:"",
+		user_profil_compte:"",
+		user_profil_credit:"",
+		user_profil_epargne:"",
+		user_client_nonlog:"N",
+		env_work:"PRD",
+		user_profil_ass:"",
+		user_profil_aug:"",
+		user_profil_fin:"",
+		user_profil_pcb:"",
+		user_profil_reconduction:"",
+		user_profil_annulfin:"",
+		user_segment:"",
+		product_code_promo:"",
+		env_camtype:"",
+		env_support:"",
+		user_federation:"",
+		user_portef_theorique:"",
+		substitution_mode:"",
+		type_acces:"",
+		user_agence:"",
+		user_formule_bad:"",
+		user_frequence_BAD:"",
+		user_niveau:"",
+		user_segment_commercial:"",
+		user_type_client:"",
+		user_type_personne:"",
+		env_marque:"CIC-2015",
+		env_country:"FR",
+		env_langue:"fr",
+		env_espace:"Aucun",
+		user_profil_suividde_analyse:"##",
+		user_profil_suividde_instruction:"##",
+		user_space:"",
+		user_bank:"",
+		client_connecte:"false",
+		user_rawfinancable:"",
+		user_financable:"",
+		user_issubst:"",
+		page_cat1:"CIC",
+		page_cat2:"",
+		page_cat3:"",
+		page_cat4:"",
+		page_cat5:"",
+		application_path:url_page,
+		relation_group:"",
+		cat_juridique:"",
+		dir_reg:""
+	};
+</script><script>
+if (typeof(dataLayer) == 'undefined') var dataLayer = [];
+if (typeof(url_page) == 'undefined' || url_page == "") var url_page = "";
+if (typeof(page_name) != "undefined" && page_name != "")dataLayer.push({'page_name' : page_name});
+if (typeof(space) == 'undefined') var space = "";
+if (typeof(subspace) == 'undefined') var subspace = "";
+if (typeof(application_name) == 'undefined') var application_name = "";
+if (typeof(product_name) == 'undefined') var product_name = "";
+if (typeof(souscription_etape) == 'undefined') var souscription_etape = "";
+if (typeof(souscription_page_name) == 'undefined') var souscription_page_name = "";
+if (typeof(espacewat) == 'undefined') var espacewat = "";
+if (typeof(env_template) == 'undefined' || env_template == "") var env_template = 'page';
+var clientidentifie = 'false';
+var clientreconnu = 'N';
+var user_statut = '';
+if (clientidentifie == "false" && clientreconnu == "N"){
+	user_statut = "prospect";
+	}
+else if (clientidentifie == "false" && clientreconnu == "Y") {
+	user_statut = "client reconnu";
+	}
+else if (clientidentifie == "true") {
+	user_statut = "client authentifie";
+};
+if (espacewat != "")dataLayer.push({'espace' : espacewat});
+if (space != "")dataLayer.push({'space' : space});
+if (subspace != "")dataLayer.push({'subspace' : subspace});
+if (application_name != "")dataLayer.push({'application_name' : application_name});
+var federation = "";
+if (federation != "")dataLayer.push({'federation' : federation});
+var caisse = "";
+if (caisse != "")dataLayer.push({'caisse' : caisse});
+var contratbad = "";
+if (contratbad != "")dataLayer.push({'contratbad' : contratbad});
+var typeclient = "";
+if (typeclient != "")dataLayer.push({'typeclient' : typeclient});
+if (clientidentifie != "")dataLayer.push({'clientidentifie' : clientidentifie});
+if (clientreconnu != "")dataLayer.push({'clientreconnu' : clientreconnu});
+var alias = "";
+if (alias != "")dataLayer.push({'alias' : alias});
+var typomarche = "";
+if (typomarche != "")dataLayer.push({'typomarche' : typomarche});
+var activitebad = "";
+if (activitebad != "")dataLayer.push({'activitebad' : activitebad});
+var surfacefinanciere = "";
+if (surfacefinanciere != "")dataLayer.push({'surfacefinanciere' : surfacefinanciere});
+var langue = "fr";
+if (langue != "")dataLayer.push({'langue' : langue});
+var enviro = "PRD";
+if (enviro != "")dataLayer.push({'enviro' : enviro});
+var canal = "WEB_DESKTOP";
+if (canal != "")dataLayer.push({'canal' : canal});
+var sousespaces = "Aucun";
+if (sousespaces != "")dataLayer.push({'sousespaces' : sousespaces});
+if (env_template != "")dataLayer.push({'typepage' : env_template});
+var espaceclientreconnu = "";
+if (espaceclientreconnu != "")dataLayer.push({'espaceclientreconnu' : espaceclientreconnu});
+var offre = "";
+if (offre != "")dataLayer.push({'offre' : offre});
+if (user_statut != "")dataLayer.push({'statutclient' : user_statut});
+var usernivauto = "";
+if (usernivauto != "")dataLayer.push({'usernivauto' : usernivauto});
+var usersubst = "";
+if (usersubst != "")dataLayer.push({'usersubst' : usersubst});
+var usernivacc = "";
+if (usernivacc != "")dataLayer.push({'usernivacc' : usernivacc});
+var typeacces = "";
+if (typeacces != "")dataLayer.push({'typeacces' : typeacces});
+if (url_page != "")dataLayer.push({'url_page' : url_page});
+if (product_name != "")dataLayer.push({'product_name' : product_name});
+if (souscription_etape != "")dataLayer.push({'souscription_etape' : souscription_etape});
+if (souscription_page_name != "")dataLayer.push({'souscription_page_name' : souscription_page_name});
+var user_ega = "";
+if (user_ega != "")dataLayer.push({'user_ega' : user_ega});
+var user_dreg = "";
+if (user_dreg != "")dataLayer.push({'user_dreg' : user_dreg});
+var page_cat1 = "CIC";
+if (page_cat1 != "")dataLayer.push({'page_cat1' : page_cat1});
+var page_cat2 = "";
+if (page_cat2 != "")dataLayer.push({'page_cat2' : page_cat2});
+var page_cat3 = "";
+if (page_cat3 != "")dataLayer.push({'page_cat3' : page_cat3});
+var page_cat4 = "";
+if (page_cat4 != "")dataLayer.push({'page_cat4' : page_cat4});
+var page_cat5 = "";
+if (page_cat5 != "")dataLayer.push({'page_cat5' : page_cat5});
+if (typeof(options) == 'undefined') var options = "";
+if (options != "")dataLayer.push({'options' : options});
+if (typeof(prjcli_modification_projet) != 'undefined' && prjcli_modification_projet != "") dataLayer.push({'prjcli_modification_projet': prjcli_modification_projet});
+if (typeof(prjcli_modification_nom_projet) != 'undefined' && prjcli_modification_nom_projet != "") dataLayer.push({'prjcli_modification_nom_projet': prjcli_modification_nom_projet});
+if (typeof(prjcli_modification_cin) != 'undefined' && prjcli_modification_cin != "") dataLayer.push({'prjcli_modification_cin': prjcli_modification_cin});
+</script><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WMXC9XJ"
+title="Google Tag Manager" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMXC9XJ');</script><!-- End Google Tag Manager --><script type="text/javascript">
+var tags = ['OTH','GTM'];
+</script><!-- fin Web Analytics --><!-- Datasinks V1 --><script type="text/javascript">
+    if (typeof eia === "function") {
+        var data = {};
+        if (typeof watData !== "undefined") {
+            var mapping = {"d1":"espace","d12":"env_langue","d15":"env_espace","d16":"typepage","d18":"statutuser","d19":"substitution_mode","d197":"product_code_promo","d194":"page_cat1","d193":"page_cat2","d192":"page_cat3","d191":"page_cat4","d190":"page_cat5"};
+            for (var key in mapping) {
+                var wat_key = mapping[key];
+                if (watData.hasOwnProperty(wat_key)) {
+                    data[key] = watData[wat_key];
+                }
+            }
+        }
+        eia("record", "Page Viewed", data);
+    }
+</script><!-- Datasinks V1 --><!-- Datasinks V2 --><script type="text/javascript">
+    if (typeof ds === "function") {
+        var ds_data = {};
+        if (typeof watData !== "undefined") {
+            var mapping = ["espace","env_langue","env_espace","typepage","statutuser","substitution_mode","product_code_promo","page_cat1","page_cat2","page_cat3","page_cat4","page_cat5","application_path"];
+            for (var key in mapping) {
+                var wat_key = mapping[key];
+                if (watData.hasOwnProperty(wat_key)) {
+                    ds_data[wat_key] = watData[wat_key];
+                }
+            }
+        }
+        page_info = {
+            page_current_url: document.location.href.split('?')[0],
+            page_source_url: document.referrer.split('?')[0],
+            page_path: document.location.pathname,
+            page_title: document.title
+        };
+        ds_data = $.extend(page_info, ds_data);
+        ds()("record", "page_viewed", ds_data);
+    }
+</script><!-- Datasinks V2 --><!-- ei-msgs-chat -->
+</body></html>
